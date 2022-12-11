@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="19.699">
+    <testcase classname="Check NavBaar Link Size Name and Mousehover function" name="Verify NavBaar Links Name and Size" time="19.485">
+        <system-out>
+            <![CDATA[Given I launch browzer and open url.........................................passed
+Then Print all menu baar links..............................................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>

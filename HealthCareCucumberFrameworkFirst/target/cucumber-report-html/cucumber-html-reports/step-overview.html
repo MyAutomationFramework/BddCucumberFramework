@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/reporting.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber-JVM Reports  - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber-JVM Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="feature-overview.html">Features</a></li>
+        <li role="presentation" ><a href="tag-overview.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="step-overview.html">Steps</a></li>
+        <li role="presentation" ><a href="failures-overview.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid" id="build-info">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-1">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Project</th>
+                          <th>Number</th>
+                        <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="info">
+            <td>CucumberWebGui</td>
+                          <td>1</td>
+                        <td>14 Sep 2022, 20:24</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div id="report-lead" class="container-fluid>
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <h2>Steps Statistics</h2>
+              <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+          </div>
+  </div>
+</div>
+
+<div class="container-fluid" id="summary">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+              <table id="tablesorter" class="stats-table table-hover">
+
+          <thead>
+            <tr class="header">
+              <th>Implementation</th>
+              <th>Occurrences</th>
+              <th>Duration</th>
+              <th>Average</th>
+              <th>Ratio</th>
+            </tr>
+          </thead>
+
+          <tbody>
+                          <tr>
+                <td class="location">stepDefinations.LoginExcution.User_click_on_redlogin_button()</td>
+                <td>1</td>
+                <td class="duration" data-value="319036000">319ms</td>
+                <td class="duration" data-value="319036000">319ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinations.LoginExcution.click_on_logout_link()</td>
+                <td>1</td>
+                <td class="duration" data-value="1769654000">1s 769ms</td>
+                <td class="duration" data-value="1769654000">1s 769ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinations.LoginExcution.mousehover_on_element()</td>
+                <td>1</td>
+                <td class="duration" data-value="165645000">165ms</td>
+                <td class="duration" data-value="165645000">165ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinations.LoginExcution.user_click_on_sign_in_button()</td>
+                <td>1</td>
+                <td class="duration" data-value="1351494000">1s 351ms</td>
+                <td class="duration" data-value="1351494000">1s 351ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinations.LoginExcution.user_entered_emaili_id()</td>
+                <td>1</td>
+                <td class="duration" data-value="150689000">150ms</td>
+                <td class="duration" data-value="150689000">150ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinations.LoginExcution.user_entered_password()</td>
+                <td>1</td>
+                <td class="duration" data-value="98092000">098ms</td>
+                <td class="duration" data-value="98092000">098ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinations.LoginExcution.validate_home_page_url()</td>
+                <td>1</td>
+                <td class="duration" data-value="8225000">008ms</td>
+                <td class="duration" data-value="8225000">008ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinations.LoginExcution.validate_login_page_url()</td>
+                <td>1</td>
+                <td class="duration" data-value="3905000">003ms</td>
+                <td class="duration" data-value="3905000">003ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinations.LoginExcution.validate_text_Treament_package()</td>
+                <td>1</td>
+                <td class="duration" data-value="73447000">073ms</td>
+                <td class="duration" data-value="73447000">073ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinations.LoginExcution.validate_username()</td>
+                <td>1</td>
+                <td class="duration" data-value="93032000">093ms</td>
+                <td class="duration" data-value="93032000">093ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinations.LoginExcution.verify_user_should_logout()</td>
+                <td>1</td>
+                <td class="duration" data-value="93611000">093ms</td>
+                <td class="duration" data-value="93611000">093ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinations.RegistrationExcution.BrowserSetUp()</td>
+                <td>2</td>
+                <td class="duration" data-value="2306115000">2s 306ms</td>
+                <td class="duration" data-value="1153057500">1s 153ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinations.RegistrationExcution.User_click_on_registerLink()</td>
+                <td>1</td>
+                <td class="duration" data-value="696515000">696ms</td>
+                <td class="duration" data-value="696515000">696ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinations.RegistrationExcution.User_enter_email()</td>
+                <td>1</td>
+                <td class="duration" data-value="147951000">147ms</td>
+                <td class="duration" data-value="147951000">147ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinations.RegistrationExcution.User_should_redirect_to_registrationPage()</td>
+                <td>1</td>
+                <td class="duration" data-value="7171000">007ms</td>
+                <td class="duration" data-value="7171000">007ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinations.RegistrationExcution.databaseConection()</td>
+                <td>2</td>
+                <td class="duration" data-value="666000">000ms</td>
+                <td class="duration" data-value="333000">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinations.RegistrationExcution.page_should_redirected_to_confirmation_page()</td>
+                <td>1</td>
+                <td class="duration" data-value="4765000">004ms</td>
+                <td class="duration" data-value="4765000">004ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinations.RegistrationExcution.scrollbaar_down()</td>
+                <td>1</td>
+                <td class="duration" data-value="12700000">012ms</td>
+                <td class="duration" data-value="12700000">012ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinations.RegistrationExcution.user_click_on_RegisterBtn()</td>
+                <td>1</td>
+                <td class="duration" data-value="1423655000">1s 423ms</td>
+                <td class="duration" data-value="1423655000">1s 423ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinations.RegistrationExcution.user_click_on_maxmize_icon()</td>
+                <td>1</td>
+                <td class="duration" data-value="194990000">194ms</td>
+                <td class="duration" data-value="194990000">194ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinations.RegistrationExcution.user_enter_confirm_password()</td>
+                <td>1</td>
+                <td class="duration" data-value="81032000">081ms</td>
+                <td class="duration" data-value="81032000">081ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinations.RegistrationExcution.user_enter_medical_problem()</td>
+                <td>1</td>
+                <td class="duration" data-value="131400000">131ms</td>
+                <td class="duration" data-value="131400000">131ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinations.RegistrationExcution.user_enter_mobile_no()</td>
+                <td>1</td>
+                <td class="duration" data-value="109045000">109ms</td>
+                <td class="duration" data-value="109045000">109ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinations.RegistrationExcution.user_enter_name()</td>
+                <td>1</td>
+                <td class="duration" data-value="241993000">241ms</td>
+                <td class="duration" data-value="241993000">241ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinations.RegistrationExcution.user_enter_password()</td>
+                <td>1</td>
+                <td class="duration" data-value="104370000">104ms</td>
+                <td class="duration" data-value="104370000">104ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinations.RegistrationExcution.user_enter_patientage()</td>
+                <td>1</td>
+                <td class="duration" data-value="86504000">086ms</td>
+                <td class="duration" data-value="86504000">086ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinations.RegistrationExcution.user_open_url()</td>
+                <td>1</td>
+                <td class="duration" data-value="2752566000">2s 752ms</td>
+                <td class="duration" data-value="2752566000">2s 752ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinations.RegistrationExcution.user_select_country()</td>
+                <td>1</td>
+                <td class="duration" data-value="179943000">179ms</td>
+                <td class="duration" data-value="179943000">179ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinations.RegistrationExcution.validate_loginRed_button_present_on_the_page()</td>
+                <td>1</td>
+                <td class="duration" data-value="62032000">062ms</td>
+                <td class="duration" data-value="62032000">062ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinations.RegistrationExcution.validate_url_open()</td>
+                <td>1</td>
+                <td class="duration" data-value="20416000">020ms</td>
+                <td class="duration" data-value="20416000">020ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                      </tbody>
+
+          <tfoot class="total">
+            <tr>
+              <td>30</td>
+              <td>32</td>
+              <td class="duration">12s 690ms</td>
+              <td class="duration">396ms</td>
+              <td>Totals</td>
+            </tr>
+          </tfoot>
+
+        </table>
+          </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

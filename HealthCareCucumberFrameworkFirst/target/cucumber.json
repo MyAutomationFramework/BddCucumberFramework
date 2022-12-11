@@ -1,0 +1,48 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-11-11T18:06:33.635Z",
+        "line": 4,
+        "name": "Verify NavBaar Links Name and Size",
+        "description": "",
+        "id": "check-navbaar-link-size-name-and-mousehover-function;verify-navbaar-links-name-and-size",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 19260429200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I launch browzer and open url",
+            "match": {
+              "location": "step.NavBaarLinksNameExcution.i_launch_browzer_and_open_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 996900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Print all menu baar links",
+            "match": {
+              "location": "step.NavBaarLinksNameExcution.print_all_menu_baar_links()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Check NavBaar Link Size Name and Mousehover function",
+    "description": "",
+    "id": "check-navbaar-link-size-name-and-mousehover-function",
+    "keyword": "Feature",
+    "uri": "file:src/test/resource/features/navBaarLinks.feature",
+    "tags": []
+  }
+]
